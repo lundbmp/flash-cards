@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/lundbmp/flash-cards/issues"
   },
-  "homepage": "https://github.com/lundbmp/flash-cards#readme"
+  "homepage": "https://github.com/lundbmp/flash-cards#readme",
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
 }
