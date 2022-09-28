@@ -6,26 +6,27 @@ const cardSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: timestamp => dateFormat(timestamp)
+            //get: timestamp => dateFormat(timestamp)
         },
-        cardId: {
+        question: {
             type: String,
             required: true
         },
-        question: {
-            type: String
-        },
         answer: {
-            type: String
+            type: String,
+            required: true
         },
         category: {
-            type: String
+            type: String,
+            required: true
         },
         createdBy: {
-            type: String
+            type: String,
+            required: true
         },
         difficulty: {
-            type: Int
+            type: Number,
+            required: true
         },
         title: {
             type: String,
@@ -33,5 +34,7 @@ const cardSchema = new Schema(
         }
     }
 )
+
+const Card = model('Card', cardSchema);
 
 module.exports = Card;
