@@ -7,12 +7,17 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="flex-column justify-flex-start min-100-vh">
-      <Header />
-      <div className="container">
-        <Home />
-      </div>
-      <Footer />
+    // <div className="flex-column justify-flex-start min-100-vh">
+    //   <Header />
+    //   <div className="container">
+    //     <Home />
+    //   </div>
+    //   <Footer />
+    // </div>
+    <div>
+      <Header></Header>
+      <Home></Home>
+      <Footer></Footer>
     </div>
   );
 }
