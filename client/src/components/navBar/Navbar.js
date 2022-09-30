@@ -1,4 +1,4 @@
-import './Navbar.css';
+import '../../index.css';
 import {ReactComponent as DownIcon} from './icons/down.svg';
 import {ReactComponent as PointIcon} from './icons/point.svg';
 import {ReactComponent as BackIcon} from './icons/back.svg';
@@ -48,14 +48,13 @@ function DropdownMenu() {
   const [menuHeight, setMenuHeight] = useState(null);
   const dropdownRef = useRef(null);
 
-  useEffect(() => {
-    setMenuHeight(dropdownRef.current?.firstChild.offsetHeight)
-  }, [])
-
   function calcHeight(el) {
     const height = el.offsetHeight;
     setMenuHeight(height);
   }
+  useEffect(() => {
+    setMenuHeight(dropdownRef.current?.firstChild.offsetHeight)
+  }, [])
 
   function DropdownItem(props) {
     return (
