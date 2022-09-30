@@ -1,3 +1,5 @@
+import CardForm from "../components/CardForm";
+
 const Dashboard = () => {
   return (
     <div>
