@@ -1,5 +1,8 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
+import Nav from "./components/Navbar/Navbar";
+
+
 
 import {
   ApolloProvider,
@@ -8,6 +11,7 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+
 
 // defining out graphql route
 const httpLink = createHttpLink({
@@ -34,9 +38,11 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
+        <header className="">
+          
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <Nav/>
+          {/* <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <a
@@ -46,11 +52,11 @@ function App() {
             rel="noopener noreferrer"
           >
             Learn React
-          </a>
+          </a> */}
         </header>
       </div>
-    </ApolloProvider>
+    </ApolloProvider> 
   );
-}
 
+}
 export default App;

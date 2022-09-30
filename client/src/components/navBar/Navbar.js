@@ -1,14 +1,14 @@
-import './index.css';
+import './Navbar.css';
 import {ReactComponent as DownIcon} from './icons/down.svg';
 import {ReactComponent as PointIcon} from './icons/point.svg';
 import {ReactComponent as BackIcon} from './icons/back.svg';
-// import {ReactComponent as historyIcon} from './icons/history.svg';
+
 
 
 import React, {useState,useEffect, useRef } from "react";
 import { CSSTransition } from 'react-transition-group';
 
-function App() {
+function Nav() {
   return (
     <Navbar>
       {/* <NavItem icon ={< />} */}
@@ -34,9 +34,9 @@ function NavItem(props) {
 
   return (
     <li className="nav-item">
-      <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
+      <button className="icon-button" onClick={() => setOpen(!open)}>
         {props.icon}
-      </a>
+      </button>
 
       {open && props.children}
     </li>
@@ -59,11 +59,11 @@ function DropdownMenu() {
 
   function DropdownItem(props) {
     return (
-      <a href="#" className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
+      <button href="#" className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
         <span className="icon-button">{props.leftIcon}</span>
         {props.children}
         <span className="icon-right">{props.rightIcon}</span>
-      </a>
+      </button>
     );
   }
 
@@ -77,9 +77,8 @@ function DropdownMenu() {
         unmountOnExit
         onEnter={calcHeight}>
         <div className="menu">
-          <DropdownItem>My Profile</DropdownItem>
+          <DropdownItem>My Dashboard</DropdownItem>
           <DropdownItem
-            // leftIcon={<CogIcon />}
             rightIcon={<PointIcon />}
             goToMenu="subjects">
             Subjects
@@ -135,4 +134,4 @@ function DropdownMenu() {
   );
 }
 
-export default App;
+export default Nav;
