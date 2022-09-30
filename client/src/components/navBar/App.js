@@ -2,7 +2,7 @@ import './index.css';
 import {ReactComponent as DownIcon} from './icons/down.svg';
 import {ReactComponent as PointIcon} from './icons/point.svg';
 import {ReactComponent as BackIcon} from './icons/back.svg';
-import {ReactComponent as historyIcon} from './icons/history.svg';
+// import {ReactComponent as historyIcon} from './icons/history.svg';
 
 
 import React, {useState,useEffect, useRef } from "react";
@@ -11,7 +11,7 @@ import { CSSTransition } from 'react-transition-group';
 function App() {
   return (
     <Navbar>
-      <NavItem icon ={</>}
+      {/* <NavItem icon ={< />} */}
      
 
       <NavItem icon={<DownIcon />}>
@@ -85,7 +85,7 @@ function DropdownMenu() {
             Subjects
           </DropdownItem>
           <DropdownItem
-            leftIcon="🦧"
+            leftIcon=""
             rightIcon={<PointIcon />}
             goToMenu="cards">
             Create Cards
@@ -123,11 +123,11 @@ function DropdownMenu() {
           <DropdownItem goToMenu="main" leftIcon={<BackIcon />}>
             <h3>Go back </h3>
           </DropdownItem>
-          <DropdownItem leftIcon="🦘">Math</DropdownItem>
-          <DropdownItem leftIcon="🐸">Computer Science</DropdownItem>
-          <DropdownItem leftIcon="🦋">History</DropdownItem>
-          <DropdownItem leftIcon="🦔">Literature</DropdownItem>
-          <DropdownItem leftIcon="🐌">Science</DropdownItem>
+          <DropdownItem leftIcon="🧮">Math</DropdownItem>
+          <DropdownItem leftIcon="💾">Computer Science</DropdownItem>
+          <DropdownItem leftIcon="🏰">History</DropdownItem>
+          <DropdownItem leftIcon="📖">Literature</DropdownItem>
+          <DropdownItem leftIcon="🧬">Science</DropdownItem>
           
         </div>
       </CSSTransition>
