@@ -12,6 +12,7 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // defining out graphql route
 const httpLink = createHttpLink({
@@ -37,12 +38,16 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div>
-        <Header></Header>
-        <Home></Home>
-        <Dashboard></Dashboard>
-        <Footer></Footer>
-      </div>
+      <Router>
+        <div>
+          <Header></Header>
+          <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          </Routes>
+          <Footer></Footer>
+        </div>
+      </Router>
     </ApolloProvider>
   );
 }
