@@ -1,5 +1,8 @@
 // import CardForm from "../components/CardForm";
 import React from "react";
+import CardList from "../components/CardList";
+
+
 
 const Dashboard = () => {
   return (
@@ -11,7 +14,7 @@ const Dashboard = () => {
       </div>
 
       <div className="flex-row justify-space-between mb-3">
-        <div className="col-12 mb-3 col-lg-8">{/* PRINT CARD LIST  */}</div>
+        <div className="col-12 mb-3 col-lg-8"></div>
       </div>
     </div>
   );
