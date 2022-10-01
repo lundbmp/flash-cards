@@ -1,6 +1,6 @@
 // import logo from "./logo.svg";
 import "./App.js";
-import Nav from "./components/Navbar/Navbar";
+import Nav from "./components/navBar/Navbar";
 
 
 
