@@ -1,16 +1,5 @@
 import React from "react";
 import "../index.css";
-import loginImg from "../assets/study.jpg";
-
-// const Home = () => {
-//   return (
-//     <main>
-//       <div className="flex-row justify-space-between">
-//         <h1 className="text-blue-600">Hello World</h1>
-//       </div>
-//     </main>
-//   );
-// };
 
 export default function Home() {
   return (
@@ -39,7 +28,7 @@ export default function Home() {
               className="w-full my-5 py-2 bg-red-500 shadow-lg shadow-red-500/50 hover:shadow-red-500/40 text-white font-semibold rounded-lg
             "
             >
-              Sign In
+              Sign Up
             </button>
           </form>
         </div>

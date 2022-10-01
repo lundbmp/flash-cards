@@ -1,10 +1,9 @@
 import React from "react";
 
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/index";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
-import Login from "./pages/Login";
 
 import {
   ApolloProvider,
