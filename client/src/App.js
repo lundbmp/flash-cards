@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import CardCategories from "./pages/CardCategories";
-import Navbar from "./components/Navbar";
+import Nav from "./components/Navbar";
 
 import {
   ApolloProvider,
@@ -43,7 +43,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Navbar></Navbar>
+          <Nav></Nav>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />

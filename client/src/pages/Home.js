@@ -12,10 +12,17 @@ export default function Home() {
                 SIGN UP
               </h2>
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
-                <label>Email</label>
+                <label>Username</label>
                 <input
                   className="rounded-lg mt-2 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
                   type="text"
+                />
+              </div>
+              <div className="flex flex-col text-gray-600 py-2 font-poppins">
+                <label>Email</label>
+                <input
+                  className="rounded-lg mt-2 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
+                  type="Email"
                 />
               </div>
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
@@ -43,7 +50,7 @@ export default function Home() {
                 <label>Email</label>
                 <input
                   className="rounded-lg mt-2 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none "
-                  type="text"
+                  type="email"
                 />
               </div>
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
