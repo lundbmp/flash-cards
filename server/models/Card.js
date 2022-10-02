@@ -25,7 +25,7 @@ const cardSchema = new Schema(
             required: true
         },
         difficulty: {
-            type: Number,
+            type: String,
             required: true
         },
         title: {

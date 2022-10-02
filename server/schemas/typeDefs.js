@@ -15,7 +15,7 @@ const typeDefs = gql`
     answer: String
     category: String
     createdBy: String
-    difficulty: Int
+    difficulty: String
     title: String
   }
 
@@ -35,7 +35,7 @@ const typeDefs = gql`
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addCard(title: String!, question: String!, answer: String!, category: String!, difficulty: Int!): Card
+    addCard(title: String!, question: String!, answer: String!, category: String!, difficulty: String!): Card
     deleteCard(_id: ID!): Card
   }
 `;
