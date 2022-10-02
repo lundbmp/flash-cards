@@ -1,5 +1,5 @@
 // // import CardForm from "../components/CardForm";
-// import React from "react";
+import React from "react";
 // import CardList from "../components/CardList";
 
 // const Dashboard = () => {
@@ -19,8 +19,8 @@
 // };
 
 // export default Dashboard;
-import "../index.css";
 
+import "../index.css";
 export default function Dashboard() {
   return (
     <main>
@@ -48,6 +48,13 @@ export default function Dashboard() {
                   </select>
                 </div>
                 {/* </div> */}
+              </div>
+              <div className="flex flex-col text-gray-600 py-2 font-poppins">
+                <label>Title</label>
+                <input
+                  className="rounded-lg mt-6 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
+                  type="text"
+                />
               </div>
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
                 <label>Question</label>
