@@ -13,7 +13,7 @@ export const LOGIN = gql`
 `;
 
 export const addCard = gql`
-    mutation addCard($title: String!, $question: String!, $answer: String!, $category: String!, $difficulty: Int!) {
+    mutation addCard($title: String!, $question: String!, $answer: String!, $category: String!, $difficulty: String!) {
         add(title: $title, question: $question, answer: $answer, category: $category, difficulty: $difficulty) {
             _id
             title

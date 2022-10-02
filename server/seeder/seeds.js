@@ -25,10 +25,11 @@ db.once("open", async () => {
   //    create cards
   for (let i = 0; i < 200; i++) {
     const subject = ["Math", "Computer Science", "History", "Science", "Literature"];
+    const difficultyArr = ["Beginner", "Easy", "Normal", "Hard", "Expert"];
     const title = faker.lorem.word();
     const question = faker.lorem.words(Math.round(Math.random() * 5) + 1);
     const answer = faker.lorem.words(Math.round(Math.random() * 10) + 1);
-    const difficulty = Math.round(Math.random() * 5) + 1;
+    const difficulty = difficultyArr[Math.floor(Math.random() * 5)];
     const category = subject[Math.floor(Math.random() * 5)];
     const randomUser =
       createdUsers.ops[Math.round(Math.random() * (createdUsers.ops.length - 1))];

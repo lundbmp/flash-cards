@@ -40,11 +40,11 @@ export default function Dashboard() {
                     aria-label="Default select example"
                   >
                     <option selected>Select Area of Study</option>
-                    <option value="CS">Computer Science</option>
-                    <option value="HS">History</option>
-                    <option value="LIT">Literature</option>
-                    <option value="MTH">Math</option>
-                    <option value="SCI">Science</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="History">History</option>
+                    <option value="Literature">Literature</option>
+                    <option value="Math">Math</option>
+                    <option value="Science">Science</option>
                   </select>
                 </div>
                 {/* </div> */}
@@ -71,11 +71,11 @@ export default function Dashboard() {
                     aria-label="Default select example"
                   >
                     <option selected>Select Skill Level</option>
-                    <option value="1">Beginner</option>
-                    <option value="2">Easy</option>
-                    <option value="3">Normal</option>
-                    <option value="4">Hard</option>
-                    <option value="5">Expert</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Hard">Hard</option>
+                    <option value="Expert">Expert</option>
                   </select>
                 </div>
               </div>
