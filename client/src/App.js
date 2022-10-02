@@ -1,10 +1,11 @@
 import React from "react";
 
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import CardCategories from "./pages/CardCategories";
+import Navbar from "./components/Navbar";
 
 import {
   ApolloProvider,
@@ -42,7 +43,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Header></Header>
+          <Navbar></Navbar>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
