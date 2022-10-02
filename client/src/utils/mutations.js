@@ -12,7 +12,7 @@ export const LOGIN = gql`
     }
 `;
 
-export const addCard = gql`
+export const ADD_CARD = gql`
     mutation addCard($title: String!, $question: String!, $answer: String!, $category: String!, $difficulty: String!) {
         add(title: $title, question: $question, answer: $answer, category: $category, difficulty: $difficulty) {
             _id
@@ -25,7 +25,7 @@ export const addCard = gql`
     }
 `;
 
-export const deleteCard = gql`
+export const DELETE_CARD = gql`
     mutation deleteCard($_id: ID!) {
         deleteCard(_id: $_id) {
             _id
@@ -40,7 +40,7 @@ export const deleteCard = gql`
     }
 `;
 
-export const addUser = gql`
+export const ADD_USER = gql`
     mutation addUser($username: String!, $email: String!, $password: String!) {
         addUser(username: $username, email: $email, password: $password) {
             token
