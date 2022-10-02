@@ -70,12 +70,12 @@ export default function Dashboard() {
                     className="form-select rounded-lg mt-2 p-2 w-full border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 transition ease-in-out"
                     aria-label="Default select example"
                   >
-                    <option selected>Select Difficulty Level</option>
-                    <option value="1">Level 1</option>
-                    <option value="2">Level 2</option>
-                    <option value="3">Level 3</option>
-                    <option value="4">Level 4</option>
-                    <option value="5">Level 5</option>
+                    <option selected>Select Skill Level</option>
+                    <option value="1">Beginner</option>
+                    <option value="2">Easy</option>
+                    <option value="3">Normal</option>
+                    <option value="4">Hard</option>
+                    <option value="5">Expert</option>
                   </select>
                 </div>
               </div>
