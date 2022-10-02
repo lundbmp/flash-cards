@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/pages/Home.js"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
+    },
   },
+  variants: {},
   plugins: [],
 };

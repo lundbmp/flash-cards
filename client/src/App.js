@@ -1,11 +1,10 @@
 import React from "react";
 
 import Header from "./components/Header";
-import Footer from "./components/Footer/index";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import CardCategories from "./pages/CardCategories";
-import Navbar from "./components/Navbar/Navbar";
 
 import {
   ApolloProvider,
@@ -43,15 +42,30 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Header><Navbar/></Header>
+          <Header></Header>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/math" element={<CardCategories category={"Math"}/>} />
-            <Route path="/computerscience" element={<CardCategories category={"Computer Science"}/>} />
-            <Route path="/history" element={<CardCategories category={"History"}/>} />
-            <Route path="/science" element={<CardCategories category={"Science"}/>} />
-            <Route path="/literature" element={<CardCategories category={"Literature"}/>} />
+            <Route
+              path="/math"
+              element={<CardCategories category={"Math"} />}
+            />
+            <Route
+              path="/computerscience"
+              element={<CardCategories category={"Computer Science"} />}
+            />
+            <Route
+              path="/history"
+              element={<CardCategories category={"History"} />}
+            />
+            <Route
+              path="/science"
+              element={<CardCategories category={"Science"} />}
+            />
+            <Route
+              path="/literature"
+              element={<CardCategories category={"Literature"} />}
+            />
           </Routes>
           <Footer></Footer>
         </div>
