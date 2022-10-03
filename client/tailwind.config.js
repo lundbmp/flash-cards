@@ -11,7 +11,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
       },
       variants: {},
-      plugins: [require("@tailwindcss/forms")],
+      plugins: [require("@tailwindcss/forms", "@tailwindcss/typography")],
     },
     // screens: {
     //   tablet: "640px",

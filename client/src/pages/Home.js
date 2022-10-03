@@ -5,6 +5,7 @@ import { Navigate } from "react-router-dom";
 import { ADD_USER, LOGIN } from "../utils/mutations";
 import Auth from "../utils/auth";
 import "../index.css";
+// import studyImg from "../assets/globe-img.jpg";
 
 export default function Home() {
   // ######## SIGNUP
@@ -75,12 +76,21 @@ export default function Home() {
   return (
     <main>
       <div className="bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 w-full">
+        <p className="p-6 m-6 text-center font-poppins text-5xl font-bold italic leading-normal mt-0 mb-2 text-white tracking-wider">
+          Welcome to your Flash Card Creator!
+        </p>
+        {/* <section className="h-2">
+          <img src={studyImg} alt="" />
+        </section> */}
+
+        {/* Background styling */}
         <div className="grid grid-cols-1 sm:grid-cols-2 h-screen">
           <div className="flex flex-col justify-center">
             <form
               className="max-w-[400px] w-full mx-auto bg-white shadow-xl shadow-gray-700/100 px-8 pt-6 pb-8 rounded-lg"
               onSubmit={handleSignupSubmit}
             >
+              {/* Sign Up Form */}
               <h2 className="text-3xl bg-clip-text text-gray-600 font-bold text-center font-poppins">
                 SIGN UP
               </h2>
@@ -122,7 +132,8 @@ export default function Home() {
               </button>
             </form>
           </div>
-
+          {/* 
+        Login Form */}
           <div className="flex flex-col justify-center">
             <form
               className="max-w-[400px] w-full mx-auto bg-white shadow-xl shadow-gray-700/100 px-8 pt-6 pb-8 rounded-lg"
@@ -154,15 +165,18 @@ export default function Home() {
               <button
                 className="w-full text-lg my-5 py-2 shadow-lg shadow-gray-600/100 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 hover:bg-gradient-to-br focus:ring-2 dark:focus:ring-gray-400 flex-center text-white font-semibold rounded-md font-poppins
             "
-                >
-                  Login
-                </button>
-              </div>
+              >
+                Login
+              </button>
             </form>
           </div>
         </div>
-      </main>
-    </body>
+        {/* Footer text */}
+        <p className="text-center font-poppins text-white text-lg">
+          &copy; 2022 Exam Cram
+        </p>
+      </div>
+    </main>
   );
 }
 
