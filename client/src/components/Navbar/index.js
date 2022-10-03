@@ -1,14 +1,10 @@
+// import Dropdown from 'react';
+
+
 const Navbar = () => {
   return (
 
-
-
-
-
-
-
-
-   <nav class="bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 w-full">
+   <nav class="bg-white from-green-300 via-blue-500 to-purple-600 w-full">
   <div class="">
     <svg class="fill-current h-8 w-8 mr-2 justify-content" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d=""/></svg>
     <span class="font-semibold text-xl tracking-tight">ExamCram</span>
@@ -20,20 +16,24 @@ const Navbar = () => {
   </div>
   <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
     <div class="text-sm lg:flex-grow">
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-        Home
-      </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-       Categories
-      </a>
+      <div className="flex flex-col text-gray-600 py-2 font-poppins">
+                  <select
+                    className="form-select rounded-lg mt-2 p-2 w-full border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 transition ease-in-out"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select Category</option>
+                    <option href="Cardlist">Math</option>
+                    <option><a href="https://codesandbox.io/s/9y877loq1w?file=/index.js">History</a></option>
+                    <option href="Cardlist">Science</option>
+                    <option value="4">Computer Science</option>
+                    <option value="5">Literature</option>
+                  </select>
+                </div>
+              </div>
       <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
         My Dashboard
       </a>
     </div>
-    <div>
-      <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
-    </div>
-  </div>
 </nav> 
 
 
