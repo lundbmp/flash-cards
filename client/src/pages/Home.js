@@ -5,7 +5,6 @@ import { Navigate } from "react-router-dom";
 import { ADD_USER, LOGIN } from "../utils/mutations";
 import Auth from "../utils/auth";
 import "../index.css";
-// import studyImg from "../assets/globe-img.jpg";
 
 export default function Home() {
   // ######## SIGNUP
@@ -76,14 +75,6 @@ export default function Home() {
   return (
     <main>
       <div className="bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 w-full">
-        <p className="p-6 m-6 text-center font-poppins text-5xl font-bold italic leading-normal mt-0 mb-2 text-white tracking-wider">
-          Welcome to your Flash Card Creator!
-        </p>
-        {/* <section className="h-2">
-          <img src={studyImg} alt="" />
-        </section> */}
-
-        {/* Background styling */}
         <div className="grid grid-cols-1 sm:grid-cols-2 h-screen">
           <div className="flex flex-col justify-center">
             <form

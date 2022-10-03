@@ -8,6 +8,9 @@ export default function Dashboard() {
     <main>
       {/* Background styling */}
       <div className="bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 w-full">
+        <p className="p-6 m-6 text-center font-poppins text-5xl font-bold italic leading-normal mt-0 mb-2 text-white tracking-wider">
+          Welcome to your Dashboard!
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-1 h-screen">
           <div className="flex flex-col justify-center">
             {/* Flash Card Form */}
@@ -36,14 +39,14 @@ export default function Dashboard() {
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
                 <label>Title</label>
                 <input
-                  className="rounded-lg mt-6 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
+                  className="rounded-lg mt-2 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
                   type="text"
                 />
               </div>
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
                 <label>Question</label>
                 <input
-                  className="rounded-lg mt-6 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
+                  className="rounded-lg mt-2 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
                   type="text"
                 />
               </div>
