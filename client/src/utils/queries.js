@@ -37,7 +37,7 @@ export const GET_CATEGORY_CARDS = gql`
     }
 `;
 
-export const GET_SINGLE_CARDS = gql`
+export const GET_SINGLE_CARD = gql`
     query getSingleCard($_id: ID!) {
         getSingleCard(_id: $_id) {
             _id
