@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { Navigate } from "react-router-dom";
 
-import { ADD_USER } from "../utils/mutations";
+import { ADD_USER, LOGIN } from "../utils/mutations";
 import Auth from "../utils/auth";
 import "../index.css";
 
 export default function Home() {
+  // ######## SIGNUP
   const [signupState, setSignupState] = useState({
     username: "",
     email: "",
@@ -37,8 +38,37 @@ export default function Home() {
       console.log(error);
     }
   };
+  // ########### LOGIN
+  const [loginState, setLoginState] = useState({
+    email: "",
+    password: "",
+  });
 
-  if(Auth.loggedIn()) {
+  const [loginUser, { err }] = useMutation(LOGIN);
+
+  const handleLoginChange = (event) => {
+    const { name, value } = event.target;
+
+    setLoginState({
+      ...loginState,
+      [name]: value,
+    });
+  };
+
+  const handleLoginSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const { data } = await loginUser({
+        variables: { ...loginState },
+      });
+      console.log(data);
+      Auth.login(data.login.token);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  if (Auth.loggedIn()) {
     return <Navigate to="/dashboard" />;
   }
 
@@ -94,7 +124,10 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center">
-            <form className="max-w-[400px] w-full mx-auto bg-white shadow-xl shadow-gray-700/100 px-8 pt-6 pb-8 rounded-lg">
+            <form
+              className="max-w-[400px] w-full mx-auto bg-white shadow-xl shadow-gray-700/100 px-8 pt-6 pb-8 rounded-lg"
+              onSubmit={handleLoginSubmit}
+            >
               <h2 className="text-3xl text-gray-600 font-bold text-center font-poppins">
                 LOGIN
               </h2>
@@ -103,6 +136,9 @@ export default function Home() {
                 <input
                   className="rounded-lg mt-2 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none "
                   type="Email"
+                  name="email"
+                  value={loginState.email}
+                  onChange={handleLoginChange}
                 />
               </div>
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
@@ -110,6 +146,9 @@ export default function Home() {
                 <input
                   className="rounded-lg mt-2 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
                   type="password"
+                  name="password"
+                  value={loginState.password}
+                  onChange={handleLoginChange}
                 />
               </div>
               <button
