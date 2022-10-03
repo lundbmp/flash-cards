@@ -1,7 +1,10 @@
 const Footer = () => {
   return (
-    <div className="w-100 mt-auto bg-secondary p-4">
-      <div className="container">&copy;2022 Exam Cram</div>
+    <div className="bg-white w-full">
+      <div className="container">
+        <p>&copy;2022 Exam Cram</p>
+        <p>testing</p>
+      </div>
     </div>
   );
 };

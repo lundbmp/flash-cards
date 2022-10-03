@@ -29,6 +29,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
     app.use(express.static(path.join(__dirname, "../client/build")));
   }
 
+
   db.once("open", () => {
     app.listen(PORT, () => {
       console.log(`API server running on port ${PORT}!`);

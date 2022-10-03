@@ -1,6 +1,6 @@
 import React from "react";
 
-// import Header from "./components/Header";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
@@ -44,6 +44,7 @@ function App() {
       <Router>
         <div>
           <Nav></Nav>
+          <Header></Header>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />

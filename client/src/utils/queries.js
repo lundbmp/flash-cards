@@ -1,6 +1,6 @@
 import { gql } from "@apollo/client";
 
-export const me = gql`
+export const ME = gql`
     {
         me {
             _id
@@ -10,7 +10,7 @@ export const me = gql`
     }
 `;
 
-export const user = gql`
+export const USER = gql`
     query user {
         user {
             _id
@@ -22,7 +22,7 @@ export const user = gql`
 `;
 
 
-export const getCategoryCards = gql`
+export const GET_CATEGORY_CARDS = gql`
     query getCategoryCards($category: String!) {
         getCategoryCards(category: $category) {
             _id
@@ -37,7 +37,7 @@ export const getCategoryCards = gql`
     }
 `;
 
-export const getSingleCard = gql`
+export const GET_SINGLE_CARD = gql`
     query getSingleCard($_id: ID!) {
         getSingleCard(_id: $_id) {
             _id
@@ -54,7 +54,7 @@ export const getSingleCard = gql`
 
 
 
-export const getUserCards = gql`
+export const GET_USER_CARDS = gql`
     query getUserCards{
         getUserCards {
             _id
