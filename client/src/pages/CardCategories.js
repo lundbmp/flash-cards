@@ -10,14 +10,14 @@ const CardCategories = ({ category }) => {
     variables: { category: category },
   });
 
-  if(loading) return <div>Loading</div>;
-  if(error) return `error: ${error}`;
+  if (loading) return <div>Loading</div>;
+  if (error) return `error: ${error}`;
 
   const cards = data.getCategoryCards;
-  
+
   return (
     <div>
-    <CardList cards={cards} />
+      <CardList cards={cards} />
     </div>
   );
 };
