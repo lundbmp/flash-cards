@@ -27,12 +27,12 @@ const Navbar = () => {
                       class="form-select rounded-lg mt-2 p-2 w-full border-solid border-2 border-gray-100"
                       aria-label="Default select example">
                     
-                      <option selected>Select Category</option>
-                      {/* <div href="/math">Math</div> */}
-                       <option><a href="/history">History</a></option>
-                      <option href="/math">Science</option>
-                      <option value="4">Computer Science</option>
-                      <option value="5">Literature</option>
+                    <option selected>Select Area of Study</option>
+                    <option value="CS">Computer Science</option>
+                    <option value="HS">History</option>
+                    <option value="LIT">Literature</option>
+                    <option value="MTH">Math</option>
+                    <option value="SCI">Science</option>
                     </select>
                   </div>
                 </div>
