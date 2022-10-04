@@ -41,7 +41,9 @@ import studyImg from "../../assets/study-pic.jpg";
 const CardList = ({ cards }) => {
   return (
     <div className="grid row-1 bg-gradient-to-tl from-gray-300 via-gray-200 to-gray-100 p-28">
-      {/* <img src={studyImg} alt="" /> */}
+      <p className="font-extrabold text-transparent text-6xl bg-clip-text font-poppin tracking-wider bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 text-center ">
+        Flash Cards
+      </p>
       <div className="h-screen text-center font-poppins flex flex-column flex-wrap justify-center gap-4 overflow-auto">
         {cards.map((card) => (
           <div className="col-span-3 columns-4xs">
