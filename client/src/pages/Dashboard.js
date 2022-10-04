@@ -20,7 +20,7 @@ export default function Dashboard() {
           Welcome to your Dashboard!
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-1 h-screen">
-          <div className="flex flex-col justify-center break-before-auto">
+          <div className="flex flex-col justify-center">
             {/* Flash Card Form */}
             <form className="max-w-[400px] w-full mx-auto bg-white shadow-xl shadow-gray-700/100 px-8 pt-6 pb-8 rounded-lg">
               <h2 className="text-3xl bg-clip-text text-gray-600 font-bold text-center font-poppins">
@@ -82,7 +82,7 @@ export default function Dashboard() {
                 </div>
               </div>
               <button
-                className="w-full text-sm my-5 py-2 shadow-lg shadow-gray-600/100 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 hover:bg-gradient-to-br focus:ring-2 dark:focus:ring-gray-400 flex-center text-white font-semibold rounded-full font-poppins
+                className="w-full text-sm my-5 py-2 shadow-lg shadow-gray-600/100 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 hover:bg-gradient-to-br focus:ring-2 dark:focus:ring-gray-400 flex-center text-white font-semibold rounded-md font-poppins
             "
               >
                 Create

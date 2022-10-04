@@ -21,6 +21,10 @@ module.exports = {
         lg: ["28px"],
         xl: ["32px"],
       },
+      spacing: {
+        112: "28rem",
+        128: "32rem",
+      },
       variants: {},
       plugins: [require("@tailwindcss/forms", "@tailwindcss/typography")],
     },
