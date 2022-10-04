@@ -1,7 +1,6 @@
 import React from "react";
-
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import CardCategories from "./pages/CardCategories";
@@ -68,7 +67,7 @@ function App() {
               element={<CardCategories category={"Literature"} />}
             />
           </Routes>
-          <Footer></Footer>
+          {/* <Footer></Footer> */}
         </div>
       </Router>
     </ApolloProvider>
