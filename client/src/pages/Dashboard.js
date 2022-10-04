@@ -4,6 +4,7 @@ import CardList from "../components/CardList";
 import { GET_USER_CARDS } from "../utils/queries";
 import { useQuery } from "@apollo/client";
 import "../index.css";
+
 export default function Dashboard() {
   const { loading, error, data } = useQuery(GET_USER_CARDS);
 
@@ -14,12 +15,12 @@ export default function Dashboard() {
   return (
     <main>
       {/* Background styling */}
-      <div className="bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 w-full">
+      <div className="bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 w-full h-full">
         <p className="p-6 m-6 text-center font-poppins text-5xl font-bold italic leading-normal mt-0 mb-2 text-white tracking-wider">
           Welcome to your Dashboard!
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-1 h-screen">
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center break-before-auto">
             {/* Flash Card Form */}
             <form className="max-w-[400px] w-full mx-auto bg-white shadow-xl shadow-gray-700/100 px-8 pt-6 pb-8 rounded-lg">
               <h2 className="text-3xl bg-clip-text text-gray-600 font-bold text-center font-poppins">
@@ -81,7 +82,7 @@ export default function Dashboard() {
                 </div>
               </div>
               <button
-                className="w-full text-lg my-5 py-2 shadow-lg shadow-gray-600/100 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 hover:bg-gradient-to-br focus:ring-2 dark:focus:ring-gray-400 flex-center text-white font-semibold rounded-md font-poppins
+                className="w-full text-sm my-5 py-2 shadow-lg shadow-gray-600/100 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 hover:bg-gradient-to-br focus:ring-2 dark:focus:ring-gray-400 flex-center text-white font-semibold rounded-full font-poppins
             "
               >
                 Create
@@ -89,9 +90,9 @@ export default function Dashboard() {
             </form>
           </div>
         </div>
-      </div>
-      <div>
-        <CardList cards={cards} />
+        <div>
+          <CardList cards={cards} />
+        </div>
       </div>
     </main>
   );
