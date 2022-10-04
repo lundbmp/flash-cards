@@ -1,6 +1,7 @@
 import React from "react";
 // import Card from "../Card";
 import "../../index.css";
+import studyImg from "../../assets/study-pic.jpg";
 // const cards = [
 //   {
 //     title: "kjkfljsdkljf",
@@ -39,7 +40,8 @@ import "../../index.css";
 // should be taking in array as a props
 const CardList = ({ cards }) => {
   return (
-    <div className="grid row-1 bg-gray-200 p-28">
+    <div className="grid row-1 bg-gradient-to-tl from-gray-300 via-gray-200 to-gray-100 p-28">
+      {/* <img src={studyImg} alt="" /> */}
       <div className="h-screen text-center font-poppins flex flex-column flex-wrap justify-center gap-4 overflow-auto">
         {cards.map((card) => (
           <div className="col-span-3 columns-4xs">
@@ -50,6 +52,7 @@ const CardList = ({ cards }) => {
                 </p>
                 <p>{card.category}</p>
                 <p>{card.difficulty}</p>
+
                 <p className="text-md font-poppin text-black-600">
                   {card.question}
                 </p>
