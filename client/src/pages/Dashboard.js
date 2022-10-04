@@ -2,31 +2,18 @@
 import React from "react";
 // import CardList from "../components/CardList";
 
-// const Dashboard = () => {
-//   return (
-//     <div>
-//       <div className="flex-row mb-3">
-//         <h2 className="bg-dark text-secondary p-3 display-inline-block">
-//           {/* Viewing <usernames>'s Dashboard. */}Goodbye World.
-//         </h2>
-//       </div>
-
-//       <div className="flex-row justify-space-between mb-3">
-//         <div className="col-12 mb-3 col-lg-8"></div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Dashboard;
-
 import "../index.css";
 export default function Dashboard() {
   return (
     <main>
+      {/* Background styling */}
       <div className="bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 w-full">
+        <p className="p-6 m-6 text-center font-poppins text-5xl font-bold italic leading-normal mt-0 mb-2 text-white tracking-wider">
+          Welcome to your Dashboard!
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-1 h-screen">
           <div className="flex flex-col justify-center">
+            {/* Flash Card Form */}
             <form className="max-w-[400px] w-full mx-auto bg-white shadow-xl shadow-gray-700/100 px-8 pt-6 pb-8 rounded-lg">
               <h2 className="text-3xl bg-clip-text text-gray-600 font-bold text-center font-poppins">
                 Flash Card
@@ -52,14 +39,14 @@ export default function Dashboard() {
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
                 <label>Title</label>
                 <input
-                  className="rounded-lg mt-6 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
+                  className="rounded-lg mt-2 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
                   type="text"
                 />
               </div>
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
                 <label>Question</label>
                 <input
-                  className="rounded-lg mt-6 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
+                  className="rounded-lg mt-2 p-2 border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 focus:outline-none"
                   type="text"
                 />
               </div>
