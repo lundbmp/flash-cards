@@ -91,7 +91,7 @@ export default function Dashboard() {
         </div>
       </div>
       <div>
-      <CardList cards={cards} />
+      
       </div>
     </main>
   );
