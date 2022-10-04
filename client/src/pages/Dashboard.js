@@ -1,9 +1,16 @@
 // // import CardForm from "../components/CardForm";
 import React from "react";
 import CardList from "../components/CardList";
-
+import { GET_USER_CARDS } from "../utils/queries";
+import { useQuery } from "@apollo/client";
 import "../index.css";
 export default function Dashboard() {
+  const { loading, error, data } = useQuery(GET_USER_CARDS);
+
+  if (loading) return <div>Loading</div>;
+  if (error) return `error: ${error}`;
+
+  const cards = data.getUserCards;
   return (
     <main>
       {/* Background styling */}
@@ -84,7 +91,7 @@ export default function Dashboard() {
         </div>
       </div>
       <div>
-        <CardList cards={cards} />
+      <CardList cards={cards} />
       </div>
     </main>
   );
