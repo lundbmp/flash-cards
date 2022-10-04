@@ -1,6 +1,6 @@
 // // import CardForm from "../components/CardForm";
 import React from "react";
-// import CardList from "../components/CardList";
+import CardList from "../components/CardList";
 
 import "../index.css";
 export default function Dashboard() {
@@ -82,6 +82,9 @@ export default function Dashboard() {
             </form>
           </div>
         </div>
+      </div>
+      <div>
+        <CardList cards={cards} />
       </div>
     </main>
   );
