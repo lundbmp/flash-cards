@@ -16,7 +16,7 @@ export default function Dashboard() {
     <main>
       {/* Background styling */}
       <div className="bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 w-full h-full">
-        <p className="py-6 m-6 font-extrabold text-transparent text-6xl bg-clip-text font-poppin tracking-wider bg-white text-center">
+        <p className="py-6 m-6 font-extrabold text-transparent text-6xl bg-clip-text font-poppin tracking-wider bg-gradient-to-tl from-gray-300 via-gray-200 to-gray-100 text-center">
           Welcome to your Dashboard!
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-1 h-screen">
