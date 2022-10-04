@@ -79,10 +79,10 @@ export default function Dashboard() {
               </h2>
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
                 <label>Category</label>
-                <div class="flex justify-center">
+                <div className="flex justify-center">
                   {/* <div class="mb-3 xl:w-96"> */}
                   <select
-                    class="form-select rounded-lg mt-2 p-2 w-full border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 transition ease-in-out"
+                    className="form-select rounded-lg mt-2 p-2 w-full border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 transition ease-in-out"
                     aria-label="Default select example"
                     name="category"
                     value={createCardState.category}
