@@ -2,6 +2,7 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 
 import CardList from "../components/CardList";
+import "../index.css";
 
 import { GET_CATEGORY_CARDS } from "../utils/queries";
 
@@ -15,11 +16,7 @@ const CardCategories = ({ category }) => {
 
   const cards = data.getCategoryCards;
 
-  return (
-    <div>
-      <CardList cards={cards} />
-    </div>
-  );
+  return <CardList cards={cards} />;
 };
 
 export default CardCategories;

@@ -1,23 +1,60 @@
 import React from "react";
 import Card from "../Card";
+import "../../index.css";
+// const cards = [
+//   {
+//     title: "kjkfljsdkljf",
+//     category: "Math",
+//     difficulty: "beginner",
+//     question: "what is ?",
+//     answer: "this",
+//     createdBy: "myself",
+//   },
+//   {
+//     title: "kjkfljsdkljf",
+//     category: "Math",
+//     difficulty: "beginner",
+//     question: "what is ?",
+//     answer: "this",
+//     createdBy: "myself",
+//   },
+//   {
+//     title: "kjkfljsdkljf",
+//     category: "Math",
+//     difficulty: "beginner",
+//     question: "what is ?",
+//     answer: "this",
+//     createdBy: "myself",
+//   },
+//   {
+//     title: "kjkfljsdkljf",
+//     category: "Math",
+//     difficulty: "beginner",
+//     question: "what is ?",
+//     answer: "this",
+//     createdBy: "myself",
+//   },
+// ];
 
 // should be taking in array as a props
 const CardList = ({ cards }) => {
-    return (
+  return (
+    <div>
+      {cards.map((card) => (
         <div>
-            {
-                cards.map((card) => (
-                    <Card
-                    title={card.title}
-                    category={card.category}
-                    difficulty={card.difficulty}
-                    question={card.question}
-                    answer={card.answer}
-                    createdBy={card.createdBy} />
-                ))
-            }
+          <div>
+            <h2>{card.title}</h2>
+            <p>{card.category}</p>
+            <p>{card.difficulty}</p>
+          </div>
+          <h3>{card.question}</h3>
+          <p>{card.answer}</p>
+          <button>See Answer</button>
+          <p>{card.createdBy}</p>
         </div>
-    );
-}
+      ))}
+    </div>
+  );
+};
 
 export default CardList;
