@@ -25,6 +25,25 @@ OR
 
 Use the live app on Heroku: [https://exam-cram.herokuapp.com/](https://exam-cram.herokuapp.com/)
 
+### Dependencies used are:
+- apollo/client
+- testing-library/jest-dom
+- testing-library/react
+- testing-library/user-event
+- graphql
+- jwt-decode
+- react
+- react-dom
+- react-router-dom
+- react-scripts
+- styled-components
+- tailwind
+- web-vitals
+- tailwindcss/forms
+- autoprefixer
+- postcss
+- tailwindcss
+
 
 ## Screenshots
 
