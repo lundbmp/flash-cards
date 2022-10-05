@@ -1,43 +1,51 @@
-import Dropdown from 'react';
 
+
+
+
+import { valueFromAST } from 'graphql';
+import  React, {useState}from 'react';
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const [value,setValue] = useState('');
+  const handleChange = (event) => {
+    setValue(event.target.value);
+   navigate(`/${value}`);
+  }
   return (
 
-   <nav class="flex flex-row justify-center gap-4 container-xl">
+   <nav className="flex flex-row justify-center gap-4 container-xl">
 
     {/* <div class="content-center flex-auto content-evenly">
       <a href="/" class="flex">ExamCram</a>
     </div> */}
 
-    <div class="flex flex-auto text-gray-600 py-2 font-poppins">
+    <div className="flex flex-auto text-gray-600 py-2 font-poppins">
 
-    <div class="content-center flex-auto content-evenly">
-      <a href="/" class="flex">ExamCram</a>
+    <div className="content-center flex-auto content-evenly">
+      <a href="/" className="flex">ExamCram</a>
     </div>
       <div></div>
-      <Dropdown arrowClassName="arrowclass"/>
+      {/* <Dropdown arrowClassName="arrowclass"/> */}
 
-
-
-
-      <div class="flex justify-end">
-        <div class="mb-3 xl:w-96">
-                    <select
-                      class="form-select rounded-lg mt-2 p-2 w-full border-solid border-2 border-gray-100"
+      <div className="flex justify-end">
+        <div className="mb-3 xl:w-96">
+                    <select value={value} onSelect={handleChange}
+                      className="form-select rounded-lg mt-2 p-2 w-full border-solid border-2 border-gray-100"
                       aria-label="Default select example">
                     
-                    <option selected>Select Area of Study</option>
-                    <option value="CS">Computer Science</option>
-                    <option value="HS">History</option>
-                    <option value="LIT">Literature</option>
-                    <option value="MTH">Math</option>
-                    <option value="SCI">Science</option>
+                    <option defaultValue><Link to="/math"> Select Area of Study </Link></option>
+                    <option defaultValue="default">Computer Science</option>
+                    <option defaultValue="HS">History</option>
+                    <option defaultValue="LIT">Literature</option>
+                    <option defaultValue="MTH">Math</option>
+                    <option defaultValue="SCI">Science</option>
                     </select>
                   </div>
                 </div>
-                <div class= "m-8">
-      <a className="Dashboard" class="flex-row justify" href="/Dashboard"> Dashboard</a>
+                <div className= "m-8">
+      <a className="Dashboard flex-row justify" href="/Dashboard"> Dashboard</a>
     </div>        
       </div>
 
