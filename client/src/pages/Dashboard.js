@@ -5,7 +5,7 @@ import { useQuery, useMutation } from "@apollo/client";
 
 import CardList from "../components/CardList";
 
-import { GET_USER_CARDS, ME } from "../utils/queries";
+import { GET_USER_CARDS } from "../utils/queries";
 import { ADD_CARD } from "../utils/mutations";
 import Auth from "../utils/auth";
 
@@ -24,6 +24,10 @@ export default function Dashboard() {
 
   // getting current user cards
   const { loading, error, data } = useQuery(GET_USER_CARDS);
+
+  if (!Auth.loggedIn()) {
+    return <Navigate to="/" />;
+  }
 
   if (loading) return <div>Loading</div>;
   if (error) return `error: ${error}`;
@@ -59,9 +63,6 @@ export default function Dashboard() {
     }
   };
 
-  if (!Auth.loggedIn()) {
-    return <Navigate to="/" />;
-  }
   return (
     <main>
       {/* Background styling */}
