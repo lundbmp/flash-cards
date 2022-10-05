@@ -26,7 +26,9 @@ module.exports = {
         128: "32rem",
       },
       variants: {},
-      plugins: [require("@tailwindcss/forms", "@tailwindcss/typography")],
+      plugins: [
+        require("@tailwindcss/forms", "@tailwindcss/typography", "tailwind-scrollbar"),
+      ],
     },
     // screens: {
     //   tablet: "640px",
