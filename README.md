@@ -63,7 +63,7 @@ https://opensource.org/licenses/MIT
 
 ## Collaborators:
 
-Bethany Stankey, Michael Lundberg, Mac Mitsch, Michael Atwood
+Bethany Stankey, Michael Lundberg, Michael Atwood
 
 ## Contributing
 
