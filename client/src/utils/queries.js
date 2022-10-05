@@ -6,6 +6,7 @@ export const ME = gql`
             _id
             username
             email
+            Cards
         }
     }
 `;
@@ -16,7 +17,6 @@ export const USER = gql`
             _id
             username
             email
-            Cards
         }
     }
 `;
