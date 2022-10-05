@@ -8,6 +8,7 @@ import CardList from "../components/CardList";
 import { GET_USER_CARDS } from "../utils/queries";
 import { ADD_CARD } from "../utils/mutations";
 import Auth from "../utils/auth";
+import { Link } from "react-router-dom";
 
 import "../index.css";
 // import { coverImg } from "../assets/desk-img.jpg";
@@ -68,9 +69,57 @@ export default function Dashboard() {
     <main>
       {/* Background styling */}
       <div className="bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 w-full h-full">
-        <p className="py-6 m-6 font-extrabold text-transparent text-6xl bg-clip-text font-poppin tracking-wider bg-gradient-to-tl from-gray-100 via-gray-200 text-center">
-          Welcome to your Dashboard!
-        </p>
+        <div className="py-10 text-center">
+          <p className="py-4 m-4 font-bold italic text-transparent text-6xl bg-clip-text font-poppin tracking-wider bg-gradient-to-tl from-gray-100 via-gray-200/100 text-center justify-center">
+            Welcome to your Dashboard!
+          </p>
+          {/* card category buttons */}
+          <p className="italic text-bold font-poppins text-base text-white">
+            Select a Category Below to Study
+          </p>
+          <br></br>
+          <br></br>
+          <span className="px-8">
+            <button className="relative inline-flex items-center justify-center p-0.5 mb-4 mr-2 overflow-hidden text-base font-medium font-poppin text-gray-600 rounded-lg group bg-gradient-to-br from-gray-400 via-gray-200 shadow-md shadow-gray-600/100">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-white rounded-md group-hover:bg-opacity-0 shadow-gray-600/100">
+                <Link to="/computerscience">Computer Science</Link>
+              </span>
+            </button>
+          </span>
+
+          <span className="px-8">
+            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-base font-medium font-poppin text-gray-600 rounded-lg group bg-gradient-to-br from-gray-400 via-gray-200 shadow-md shadow-gray-600/100">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-white rounded-md group-hover:bg-opacity-0 shadow-gray-600/100">
+                <Link to="/history">History</Link>
+              </span>
+            </button>
+          </span>
+
+          <span className="px-8">
+            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-base font-medium font-poppin text-gray-600 rounded-lg group  bg-gradient-to-tl from-gray-400 via-gray-200 shadow-md shadow-gray-600/100">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-white rounded-md group-hover:bg-opacity-0">
+                <Link to="/literature">Literature</Link>
+              </span>
+            </button>
+          </span>
+
+          <span className="px-8">
+            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-base font-medium font-poppin text-gray-600 rounded-lg group bg-gradient-to-tl from-gray-400 via-gray-200 shadow-md shadow-gray-600/100">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-white rounded-md group-hover:bg-opacity-0 shadow-gray-600/100">
+                <Link to="/math">Math</Link>
+              </span>
+            </button>
+          </span>
+
+          <span className="px-8">
+            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-base font-medium font-poppin text-gray-600 rounded-lg group bg-gradient-to-br from-gray-400 via-gray-200 shadow-md shadow-gray-600/100">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-white rounded-md group-hover:bg-opacity-0 shadow-gray-600/100">
+                <Link to="/science">Science</Link>
+              </span>
+            </button>
+          </span>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-1 h-screen">
           <div className="flex flex-col justify-center">
             {/* Flash Card Form */}

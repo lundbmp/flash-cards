@@ -1,8 +1,9 @@
 import React from "react";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import CardCategories from "./pages/CardCategories";
+import Header from "./components/Header";
 
 import {
   ApolloProvider,
