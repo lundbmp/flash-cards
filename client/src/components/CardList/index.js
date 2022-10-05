@@ -11,7 +11,7 @@ const CardList = ({ cards }) => {
   };
   return (
     <div className="grid row-1 bg-gradient-to-tl from-gray-300 via-gray-200 to-gray-100 p-28">
-      <p className="font-extrabold text-transparent text-6xl bg-clip-text font-poppin tracking-wider bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 text-center ">
+      <p className="font-bold text-transparent text-6xl bg-clip-text font-poppin tracking-wider bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 text-center ">
         Flash Cards
       </p>
       <br></br>
@@ -21,17 +21,17 @@ const CardList = ({ cards }) => {
           <div className="col-span-3 columns-4xs">
             <div className="max-w-[400px] w-96 h-78 mx-auto bg-white shadow-xl shadow-gray-700/100 px-8 pt-6 pb-8 rounded-lg text-center">
               <div>
-                <p className="text-xl font-poppin text-cyan-800 underline">
+                <p className="text-xl font-poppin text-gray-600 underline">
                   {card.title}
                 </p>
-                <p>{card.category}</p>
+                <p className="text-blue-600 font-bold">{card.category}</p>
                 <p>{card.difficulty}</p>
 
                 <p className="text-md font-poppin text-black-600">
                   {card.question}
                 </p>
-                <p className="text-md font-poppin text-black-600">
-                  {viewAnswer ? card.answer : "Click to view answer."}
+                <p className="font-poppin text-gray-600 italic text-sm ">
+                  {viewAnswer ? card.answer : "Press Button to View"}
                 </p>
                 <button
                   className="w-full text-sm my-5 py-2 shadow-lg shadow-gray-600/100 bg-gradient-to-r via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-2 dark:focus:ring-white flex-center text-white font-semibold rounded-md font-poppins"

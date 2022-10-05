@@ -24,6 +24,7 @@ module.exports = {
       spacing: {
         112: "28rem",
         128: "32rem",
+        144: "36rem",
       },
       variants: {},
       plugins: [

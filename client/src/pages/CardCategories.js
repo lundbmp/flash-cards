@@ -16,7 +16,11 @@ const CardCategories = ({ category }) => {
 
   const cards = data.getCategoryCards;
 
-  return <CardList cards={cards} />;
+  return (
+    <div className="grid row-1 bg-gradient-to-tl from-black via-yellow-200 to-gray-100 p-28">
+      <CardList cards={cards} />
+    </div>
+  );
 };
 
 export default CardCategories;
