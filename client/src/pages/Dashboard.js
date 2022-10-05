@@ -5,7 +5,7 @@ import { useQuery, useMutation } from "@apollo/client";
 
 import CardList from "../components/CardList";
 
-import { GET_USER_CARDS } from "../utils/queries";
+import { GET_USER_CARDS, ME } from "../utils/queries";
 import { ADD_CARD } from "../utils/mutations";
 import Auth from "../utils/auth";
 
@@ -19,7 +19,9 @@ export default function Dashboard() {
     category: "",
     difficulty: "",
   });
+
   const [createCard, { err }] = useMutation(ADD_CARD);
+
   // getting current user cards
   const { loading, error, data } = useQuery(GET_USER_CARDS);
 
@@ -158,7 +160,7 @@ export default function Dashboard() {
         </div>
       </div>
       <div>
-      <CardList cards={cards} />
+        <CardList cards={cards} />
       </div>
     </main>
   );
