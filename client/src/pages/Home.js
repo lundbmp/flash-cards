@@ -116,7 +116,7 @@ export default function Home() {
                 />
               </div>
               <button
-                className="w-full text-lg my-5 py-2 shadow-lg shadow-gray-600/100 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 hover:bg-gradient-to-br focus:ring-2 dark:focus:ring-gray-400 flex-center text-white font-semibold rounded-md font-poppins
+                className="w-full text-md my-5 py-2 shadow-lg shadow-gray-600/100 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 hover:bg-gradient-to-br focus:ring-2 dark:focus:ring-gray-400 flex-center text-white font-semibold rounded-full font-poppins
             "
               >
                 Sign Up
@@ -154,7 +154,7 @@ export default function Home() {
                 />
               </div>
               <button
-                className="w-full text-lg my-5 py-2 shadow-lg shadow-gray-600/100 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 hover:bg-gradient-to-br focus:ring-2 dark:focus:ring-gray-400 flex-center text-white font-semibold rounded-md font-poppins
+                className="w-full text-md my-5 py-2 shadow-lg shadow-gray-600/100 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 hover:bg-gradient-to-br focus:ring-2 dark:focus:ring-gray-400 flex-center text-white font-semibold rounded-full font-poppins
             "
               >
                 Login
@@ -163,7 +163,7 @@ export default function Home() {
           </div>
         </div>
         {/* Footer text */}
-        <p className="text-center font-poppins text-white text-lg">
+        <p className="text-center font-poppins text-white text-sm">
           &copy; 2022 Exam Cram
         </p>
       </div>

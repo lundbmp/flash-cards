@@ -16,14 +16,14 @@ const resolvers = {
      return User.find();
    },
    getCategoryCards: async (parent, {category}) => {
-     return Card.find({category: category});
+     return Card.find({category: category}).sort({createdAt: "desc"});
    },
    getSingleCard: async (parent, {_id}) => {
      return Card.findById({_id});
    },
    getUserCards: async (parent, args, context) => {
     if (context.user) {
-      return Card.find({createdBy: context.user.username});
+      return Card.find({createdBy: context.user.username}).sort({createdAt: "desc"});
     }
     throw new AuthenticationError("Not logged in");
    }
