@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "./ExamCram.png"
+
 
 
 import Auth from "../../utils/auth"
@@ -9,9 +11,10 @@ const Header = () => {
     Auth.logout();
   }
   return (
-    <header className="flex space-x-4 justify-around items-center justify-center items-center font-poppins  hover:bg-gray-700 mx-auto">
-      <div on className="flex space-x-10 text-xl dark:text-white">
-        <h1>Exam Cram</h1>
+    <header className="flex justify-around items-center justify-center items-center font-poppins  hover:bg-gray-700 mx-auto">
+      <div className="flex text-xl dark:text-white">
+      <img className=" h-6 w-auto object-left justify-left" src={require("./ExamCram.png")} alt="ExamCram" onClick="/Home"/>
+      
         
         <span className="flex px-8 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white font-poppins"><Link to="/math">Math</Link></span>
         <span className="flex px-8 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white font-poppins"><Link to="/computerscience">Computer Science</Link></span>
