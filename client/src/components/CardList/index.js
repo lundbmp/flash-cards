@@ -18,16 +18,16 @@ const CardList = ({ cards }) => {
             <div className="col-span-3 columns-4xs">
               <div className="max-w-[400px] w-96 h-78 mx-auto bg-white shadow-xl shadow-gray-700/100 px-8 pt-6 pb-8 rounded-lg text-center">
                 <div>
-                  <p className="text-xl font-poppin text-gray-600 underline">
+                  <p className="text-xl font-poppin text-blue-800 underline">
                     {card.title}
                   </p>
-                  <p className="text-blue-600 font-bold">{card.category}</p>
-                  <p>{card.difficulty}</p>
+                  <p className="text-green-600 font-bold">{card.category}</p>
+                  <p className="text-red-800">{card.difficulty}</p>
 
-                  <p className="text-md font-poppin text-black-600">
+                  <p className="text-md font-poppin text-black">
                     {card.question}
                   </p>
-                  <p className="font-poppin text-gray-600 italic text-sm ">
+                  <p className="font-poppin text-gray-600 italic text-sm text-extrabold ">
                     {viewAnswer ? card.answer : "Press Button to View"}
                   </p>
                   <button

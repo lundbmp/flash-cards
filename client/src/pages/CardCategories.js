@@ -3,7 +3,6 @@ import { useQuery } from "@apollo/client";
 
 import CardList from "../components/CardList";
 import "../index.css";
-import studyImg from "./../assets/study-img.jpg";
 
 import { GET_CATEGORY_CARDS } from "../utils/queries";
 
@@ -18,7 +17,7 @@ const CardCategories = ({ category }) => {
   const cards = data.getCategoryCards;
 
   return (
-    <div className="grid row-1 w-full h-full p-28" img class={studyImg} alt="">
+    <div className="grid row-1 w-full h-full p-28 bg-slate-200 bg-gradient-to-tl from-gray-300 via-gray-400 to-gray-200">
       <CardList cards={cards} />
     </div>
   );

@@ -133,7 +133,6 @@ export default function Dashboard() {
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
                 <label>Category</label>
                 <div className="flex justify-center">
-                  {/* <div class="mb-3 xl:w-96"> */}
                   <select
                     className="form-select rounded-lg mt-2 p-2 w-full border-solid border-2 border-blue-300/80 focus:border-purple-500 focus:bg-gray-100 transition ease-in-out"
                     aria-label="Default select example"
@@ -149,7 +148,6 @@ export default function Dashboard() {
                     <option value="Science">Science</option>
                   </select>
                 </div>
-                {/* </div> */}
               </div>
               <div className="flex flex-col text-gray-600 py-2 font-poppins">
                 <label>Title</label>
@@ -210,6 +208,7 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+      {/* list of users cards */}
       <div>
         <CardList cards={cards} />
       </div>
