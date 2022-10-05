@@ -4,7 +4,7 @@
 
 
 ## Description
-This is a web application for users to create and view flashcards. Using React for front end, MongoDB database, and Node.js/Express.js server and API. The app is located on Heroku at []().
+This is a web application for users to create and view flashcards. Using React for front end, MongoDB database, and Node.js/Express.js server and API. The app is located on Heroku at [https://exam-cram.herokuapp.com/](https://exam-cram.herokuapp.com/).
 
 ## Table of Contents:
 
@@ -23,7 +23,7 @@ To install, clone the repository, or download the zip file. Once in the root dir
 
 OR
 
-Use the live app on Heroku: []()
+Use the live app on Heroku: [https://exam-cram.herokuapp.com/](https://exam-cram.herokuapp.com/)
 
 
 ## Screenshots
