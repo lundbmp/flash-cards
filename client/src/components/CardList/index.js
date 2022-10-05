@@ -1,46 +1,6 @@
-<<<<<<< HEAD
-import React from "react";
-import "../../index.css";
-// import studyImg from "../../assets/study-pic.jpg";
-// const cards = [
-//   {
-//     title: "kjkfljsdkljf",
-//     category: "Math",
-//     difficulty: "beginner",
-//     question: "what is ?",
-//     answer: "this",
-//     createdBy: "myself",
-//   },
-//   {
-//     title: "kjkfljsdkljf",
-//     category: "Math",
-//     difficulty: "beginner",
-//     question: "what is ?",
-//     answer: "this",
-//     createdBy: "myself",
-//   },
-//   {
-//     title: "kjkfljsdkljf",
-//     category: "Math",
-//     difficulty: "beginner",
-//     question: "what is ?",
-//     answer: "this",
-//     createdBy: "myself",
-//   },
-//   {
-//     title: "kjkfljsdkljf",
-//     category: "Math",
-//     difficulty: "beginner",
-//     question: "what is ?",
-//     answer: "this",
-//     createdBy: "myself",
-//   },
-// ];
-=======
 import React, { useState } from "react";
 import "../../index.css";
 import studyImg from "../../assets/study-pic.jpg";
->>>>>>> develop
 
 // should be taking in array as a props
 const CardList = ({ cards }) => {
@@ -79,9 +39,7 @@ const CardList = ({ cards }) => {
                 >
                   Answer
                 </button>
-                <p className="text-md font-poppin text-black-600">
-                  {card.createdBy}
-                </p>
+                <p>{card.createdBy}</p>
               </div>
             </div>
           </div>
