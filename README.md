@@ -1,4 +1,3 @@
-# ExamCram
 ![ExamCram Logo 9.PNG](./client/src/assets/ExamCram%20Logo%209.PNG)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
