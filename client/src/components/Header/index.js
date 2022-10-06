@@ -10,15 +10,13 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <header className="navbar w-full bg-white px-4 text-center">
-      <div on className="container flex">
-        <img className="rounded" src={logoImg} alt="" />
-        <span className="flex">
-          <Link to="/dashboard">Dashboard</Link>
-        </span>
+    <div className="w-full bg-white px-4 py-8 items-end  flex flex-column flex-wrap justify-center gap-4 overflow-auto text-lg">
+      <img className="rounded" src={logoImg} alt="" />
+      <div className="w-full bg-white px-4 py-8 items-end  flex flex-column flex-wrap justify-center gap-4 overflow-auto">
+        <Link to="/dashboard">Dashboard</Link>
         {Auth.loggedIn() ? <button onClick={handleLogout}>Logout</button> : " "}
       </div>
-    </header>
+    </div>
   );
 };
 

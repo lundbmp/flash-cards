@@ -25,6 +25,10 @@ module.exports = {
         112: "28rem",
         128: "32rem",
         144: "36rem",
+        sm: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "24px",
       },
       variants: {},
       plugins: [
