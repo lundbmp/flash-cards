@@ -1,4 +1,4 @@
-# ExamCram
+![ExamCram Logo 9.PNG](./client/src/assets/ExamCram%20Logo%209.PNG)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -47,13 +47,13 @@ Use the live app on Heroku: [https://exam-cram.herokuapp.com/](https://exam-cram
 
 ## Screenshots
 
-|         <b>Image running on a computer</b>         |
-| :------------------------------------------------: |
-| ![]() |
+|         <b>Image running on a computer</b>                |
+| :-------------------------------------------------------: |
+| ![desktop-view.png](./client/src/assets/desktop-view.png) |
 
 |         <b>Image running on a mobile device</b>          |
 | :------------------------------------------------------: |
-| ![]() |
+| ![mobile-view.png](./client/src/assets/mobile-view.png) |
 
 ## License
 
