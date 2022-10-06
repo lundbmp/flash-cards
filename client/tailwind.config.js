@@ -30,6 +30,9 @@ module.exports = {
         lg: "16px",
         xl: "24px",
       },
+      inset: {
+        "3px": "3px",
+      },
       variants: {},
       plugins: [
         require("@tailwindcss/forms", "@tailwindcss/typography", "tailwind-scrollbar"),

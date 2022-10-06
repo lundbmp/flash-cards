@@ -68,13 +68,13 @@ export default function Dashboard() {
   return (
     <main>
       {/* Background styling */}
-      <div className="bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 w-full h-full">
+      <div className="bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 w-full h-full ">
         <div className="py-10 text-center">
-          <p className="py-4 m-4 font-bold italic text-transparent text-6xl bg-clip-text font-poppin tracking-wider bg-gradient-to-tl from-gray-100 via-gray-200/100 text-center justify-center">
+          <p className="py-4 m-4 font-bold italic text-transparent text-6xl bg-clip-text font-poppin tracking-wider bg-gradient-to-tl from-gray-100/50 via-gray-100 text-center justify-center">
             Welcome to your Dashboard!
           </p>
           {/* card category buttons */}
-          <p className="italic text-bold font-poppins text-base text-white">
+          <p className="italic text-extrabold font-poppins text-lg text-white">
             Select a Category Below to Study
           </p>
           <br></br>
