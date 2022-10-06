@@ -1,25 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Auth from "../../utils/auth"
+import Auth from "../../utils/auth";
+import logoImg from "../../assets/ExamCram Logo 9.PNG";
+import "../../index.css";
 
 const Header = () => {
   const handleLogout = () => {
     Auth.logout();
-  }
+  };
   return (
-    <header className="bg-secondary mb-4 py-2 flex-row align-center">
-      <div on className="container flex-row justify-space-between-lg justify-center align-center">
-        <h1>Exam Cram</h1>
-        <span className=""><Link to="/dashboard">Dashboard</Link></span>
-        <span><Link to="/math">Math</Link></span>
-        <span><Link to="/computerscience">Computer Science</Link></span>
-        <span><Link to="/history">History</Link></span>
-        <span><Link to="/science">Science</Link></span>
-        <span><Link to="/literature">Literature</Link></span>
-        {Auth.loggedIn() ? <button onClick={handleLogout}>LOGOUT</button> : " "}
+    <div className="w-full bg-white px-4 py-8 items-end  flex flex-column flex-wrap justify-center gap-4 overflow-auto text-lg">
+      <img className="rounded" src={logoImg} alt="" />
+      <div className="w-full bg-white px-4 py-8 items-end  flex flex-column flex-wrap justify-center gap-4 overflow-auto">
+        <Link to="/dashboard">Dashboard</Link>
+        {Auth.loggedIn() ? <button onClick={handleLogout}>Logout</button> : " "}
       </div>
-    </header>
+    </div>
   );
 };
 

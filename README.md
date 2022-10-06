@@ -1,10 +1,10 @@
-# flash-cards
+# ExamCram
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Description
-This is a web application for users to create and view flashcards. Using React for front end, MongoDB database, and Node.js/Express.js server and API. The app is located on Heroku at []().
+This is a web application for users to create and view flashcards. Using React for front end, MongoDB database, and Node.js/Express.js server and API. The app is located on Heroku at [https://exam-cram.herokuapp.com/](https://exam-cram.herokuapp.com/).
 
 ## Table of Contents:
 
@@ -19,11 +19,30 @@ This is a web application for users to create and view flashcards. Using React f
 
 ## Usage
 
-To install, clone the repository, or download the zip file. Once in the root directory `npm install` in the command line to install the dependencies. To run on localhost, `npm run develop` in the root directory.
+To install, clone the repository, or download the zip file. Once in the root directory `npm run install` in the command line to install the dependencies. To run on localhost, `npm run develop` in the root directory.
 
 OR
 
-Use the live app on Heroku: []()
+Use the live app on Heroku: [https://exam-cram.herokuapp.com/](https://exam-cram.herokuapp.com/)
+
+### Dependencies used are:
+- apollo/client
+- testing-library/jest-dom
+- testing-library/react
+- testing-library/user-event
+- graphql
+- jwt-decode
+- react
+- react-dom
+- react-router-dom
+- react-scripts
+- styled-components
+- tailwind
+- web-vitals
+- tailwindcss/forms
+- autoprefixer
+- postcss
+- tailwindcss
 
 
 ## Screenshots
@@ -44,7 +63,7 @@ https://opensource.org/licenses/MIT
 
 ## Collaborators:
 
-Bethany Stankey, Michael Lundberg, Mac Mitsch, Michael Atwood
+Bethany Stankey, Michael Lundberg, Michael Atwood
 
 ## Contributing
 

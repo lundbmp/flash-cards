@@ -17,16 +17,23 @@ module.exports = {
       },
       fontSize: {
         sm: ["16px"],
-        base: ["24px"],
+        base: ["18px"],
         lg: ["28px"],
         xl: ["32px"],
       },
       spacing: {
         112: "28rem",
         128: "32rem",
+        144: "36rem",
+        sm: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "24px",
       },
       variants: {},
-      plugins: [require("@tailwindcss/forms", "@tailwindcss/typography")],
+      plugins: [
+        require("@tailwindcss/forms", "@tailwindcss/typography", "tailwind-scrollbar"),
+      ],
     },
     // screens: {
     //   tablet: "640px",
