@@ -1,4 +1,4 @@
-# flash-cards
+# ExamCram
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -19,7 +19,7 @@ This is a web application for users to create and view flashcards. Using React f
 
 ## Usage
 
-To install, clone the repository, or download the zip file. Once in the root directory `npm install` in the command line to install the dependencies. To run on localhost, `npm run develop` in the root directory.
+To install, clone the repository, or download the zip file. Once in the root directory `npm run install` in the command line to install the dependencies. To run on localhost, `npm run develop` in the root directory.
 
 OR
 
@@ -63,7 +63,7 @@ https://opensource.org/licenses/MIT
 
 ## Collaborators:
 
-Bethany Stankey, Michael Lundberg, Mac Mitsch, Michael Atwood
+Bethany Stankey, Michael Lundberg, Michael Atwood
 
 ## Contributing
 
